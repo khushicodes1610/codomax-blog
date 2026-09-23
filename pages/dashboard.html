@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogSpace | Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1 class="logo">BlogSpace ✍️</h1>
+
+            <div class="nav-links">
+
+                <a href="../index.html">Home</a>
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="create-blog.html">
+                    Create Blog
+                </a>
+
+                <a href="#" id="logoutBtn">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <section class="dashboard-header">
+
+            <h2>
+                Welcome,
+                <span id="userName">User</span>
+                👋
+            </h2>
+
+            <p>
+                Manage your blogs and share your ideas
+                with the world.
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-cards">
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    ✍️
+                </div>
+
+                <h3>
+                    Create Blog
+                </h3>
+
+                <p>
+                    Write and publish a new blog.
+                </p>
+
+                <a
+                    href="create-blog.html"
+                    class="dashboard-btn"
+                >
+                    Create New Blog
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    📚
+                </div>
+
+                <h3>
+                    My Blogs
+                </h3>
+
+                <p>
+                    View the blogs you have created.
+                </p>
+
+                <a
+                    href="#myBlogs"
+                    class="dashboard-btn"
+                >
+                    View Blogs
+                </a>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    👤
+                </div>
+
+                <h3>
+                    My Profile
+                </h3>
+
+                <p>
+                    View your account information.
+                </p>
+
+                <a
+                    href="#profile"
+                    class="dashboard-btn"
+                >
+                    View Profile
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="myBlogs"
+            class="my-blogs"
+        >
+
+            <h2>
+                My Blogs 📝
+            </h2>
+
+            <div id="blogList">
+
+                <p class="empty-message">
+                    You haven't created any blogs yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="profile"
+            class="profile-section"
+        >
+
+            <h2>
+                My Profile 👤
+            </h2>
+
+            <div class="profile-card">
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="profileName">-</span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="profileEmail">-</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 BlogSpace. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
